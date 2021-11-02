@@ -1,0 +1,27 @@
+
+<mat-card>
+  <mat-card-title class="title">Student Details</mat-card-title>
+  <mat-card-content>
+  <table>
+    <tr>
+      <th>Sr.No</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Fees</th>
+      <th>Pending</th>
+      <th>Admission Details</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let d of userDetails;index as i">
+      <td>{{i+1}}</td>
+      <td>{{d.firstName}}</td>
+      <td>{{d.lastName}}</td>
+      <td>{{d.paid}}</td>
+      <td>{{d.unpaid}}</td>
+      <td>{{d.updated | date: 'dd/MM/yyyy'}}</td>
+      <td><a [routerLink]="['details',d._id]" routerLinkActive="active"><mat-icon>visibility</mat-icon></a></td>
+    </tr>
+  </table>
+  </mat-card-content>
+</mat-card>
+  

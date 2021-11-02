@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+.title{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    box-shadow: 1px 2px 10px 0 #ff0000 !important;
+  }
+  
+ 
+.columns{
+  display: flex;
+}
+.column{
+  width:550px;
+  height: 95px;
+}
+.label{
+  font: bold;
+  background-color: rgb(218, 218, 210);
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 900;
+  box-shadow: 10px 2px 10px 0 #cc8484 !important;
+}
+mat-card{
+  box-shadow: 1px 2px 10px 0 #4b37817c !important;
+}
+p{
+  font-family: 'Courgette', cursive;
+  font-weight: bolder;
+}
